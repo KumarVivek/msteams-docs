@@ -1,11 +1,11 @@
 ---
-title: Designing a Microsoft Teams meeting extension notification modal
+title: Designing a Microsoft Teams meeting notification modal
 author: heath-hamilton
-description: Guidance and best practices for designing meeting extensions in a Microsoft Teams app.
+description: Guidance and best practices for designing a meeting notification modal for Microsoft Teams.
 ms.author: heath-hamilton
 ms.topic: conceptual
 ---
-# Designing a meeting extension notification modal
+# Designing a meeting notification modal
 
 Meeting notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly and efficiently capture input that doesn't interrupt the meeting.
 

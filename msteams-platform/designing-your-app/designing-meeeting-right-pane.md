@@ -1,23 +1,31 @@
 ---
-title: Designing Microsoft Teams meeting extensions
+title: Designing the Microsoft Teams meeting right pane
 author: heath-hamilton
-description: Guidance and best practices for designing the right pane for Microsoft Teams meeting extensions.
+description: Guidance and best practices for designing the meeting right pane for Microsoft Teams.
+ms.author: heath-hamilton
+ms.topic: conceptual
 ---
-# Designing the right pane
+# Designing the meeting right pane
 
-What's the right pane in a meeting (1-2 sentences)?
+The right pane is a canvas for augmenting collaboration during meetings. Attendees can see and interact with app content in a dedicated space outside the meeting stage through shared or role-based views.
 
 ## Use cases
 
-Surface content that
+People might use the right pane during meetings to:
 
-List of what you might commonly use meeting extensions for.
+* Submit detailed feedback (for example, evaluate a job candidate)
+* Quickly create a poll, survey, or task item for the meeting participants
+* Display notes relevant to the meeting (for example, information about a sales lead)
 
 ## Example
 
-The following example shows ...
+The following example shows the right pane displaying survey app content during a meeting.
 
-:::image type="content" source="../assets/images/calls-and-meetings/right pane-organizer-view.png" alt-text="Example shows what the meeting notification modal might look like from a meeting participant's perspective.":::
+:::image type="content" source="../assets/images/calls-and-meetings/right pane-organizer-view.png" alt-text="Example shows what the meeting right pane might look like from a meeting organizer's perspective.":::
+
+[See the full scenario](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816)
+
+[See other example use cases](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461)
 
 ## Anatomy
 
