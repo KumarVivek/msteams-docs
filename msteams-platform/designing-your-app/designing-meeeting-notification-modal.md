@@ -9,8 +9,6 @@ ms.topic: conceptual
 
 Meeting notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly and efficiently capture input that doesn't interrupt the meeting.
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQjjWsZYpNqwjRc3OXTgBpp%2FPrinciples-and-guidelines%3Fnode-id%3D1%253A2&chrome=DOCUMENTATION" allowfullscreen></iframe>
-
 ## Use cases
 
 You might create a meeting notification modal so users can:
