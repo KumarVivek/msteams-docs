@@ -60,14 +60,7 @@ Remember if your meeting notification modal requires scrolling:
 * You can only see the content you've scrolled to (nothing above or below).
 * The scrollbar is part of the webview content.
 
-:::row:::
-   :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-up.png" alt-text="Illustration showing how scrolling the webview content works in the meeting notification modal works." border="false":::
-   :::column-end:::
-   :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-down.png" alt-text="Illustration showing how scrolling the webview content works in the meeting notification modal works." border="false":::
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll.png" alt-text="Illustration showing how scrolling the webview content in the meeting notification modal works." border="false":::
 
 ## Components
 
