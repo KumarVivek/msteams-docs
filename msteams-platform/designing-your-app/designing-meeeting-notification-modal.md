@@ -50,11 +50,11 @@ Meeting notification modals are responsive and have the following dimensions:
 1. **Actions**: Optional (depends on your use case).
 1. **Input error**: When required, displays a short error message.
 1. **Aggregate count**: When required, shows if there's more than one active modal (count includes all apps).
-1. **Webview**: Displays all third-party content. See [webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829).
+1. **Webview**: Displays all third-party app content. See [webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829).
 
 ## Behavior
 
-Remember if your meeting notification modal requires scrolling:
+Here's what to know if your meeting notification modal requires scrolling:
 
 * You should only be able to scroll vertically.
 * You can only see the content you've scrolled to (nothing above or below).
@@ -76,17 +76,15 @@ Component | Guidelines | Example
 
 ## Theming
 
-These Teams-specific guidelines can help you quickly and confidently choose the right colors and typography.
-
 ### Colors
 
 Use the [recommended color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=280%3A4030) for backgrounds, foregrounds, and conveying states in meeting notification modals.
 
-[See the full color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15339)
+[See the full color scheme](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=257%3A15339)
 
 ### Typography
 
-Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15511) for titles, body text, and metadata text.
+Use the [recommended font sizes and weights](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=258%3A16040) for titles, body text, and metadata text.
 
 ## Best practices
 

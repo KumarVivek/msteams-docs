@@ -7,7 +7,7 @@ ms.topic: conceptual
 ---
 # Designing the meeting right pane
 
-The right pane is a canvas for augmenting collaboration during meetings. Attendees can see and interact with app content in a dedicated space outside the meeting stage through shared or role-based views.
+The right pane is a canvas for augmenting collaboration during meetings. Based on Teams tabs, attendees can see and interact with app content in a dedicated space outside the meeting stage through shared or role-based views.
 
 ## Use cases
 
@@ -29,15 +29,15 @@ The following example shows the right pane displaying survey app content during 
 
 ## Anatomy
 
-The right pane essentially is a Teams tab that displays content with the following dimensions:
+The right pane is a Teams tab that displays content with the following dimensions:
 
 * **Width**: 280 pixels (with 20 pixels of padding on either side)
-* **Height**: Full bleed to the bottom of the right pane. There are 20 pixels of padding between the right pane header and the webview.
+* **Height**: Full bleed to the bottom of the right pane. There are 20 pixels of padding between the pane header and the webview.
 
 :::image type="content" source="../assets/images/calls-and-meetings/right-pane-anatomy.png" alt-text="Illustration showing the UI anatomy of a meeting extension right pane." border="false":::
 
 1. **App icon**: The entry point to the right pane.
-1. **Right pane header**: Includes tab name, more actions, and close.
+1. **Right pane header**: Includes tab name, more actions, and dismiss button.
 1. **Tab name**: The name of the tab instance.
 1. **More actions**: Provides options on hover that include:
    * Reload the tab.
@@ -46,11 +46,25 @@ The right pane essentially is a Teams tab that displays content with the followi
    * Open app settings and About modal.
    * Remove the tab from the meeting.
 1. **Dismiss**: Dismisses the right pane. Always use the upper-right close icon instead of an acton in the footer.
-1. **Webview**: Displays all third-party content.
+1. **Webview**: Displays all third-party app content.
 
 ## Behavior
 
-Some text and art.
+### Scrolling
+
+Here's what to know about scrolling in the right pane:
+
+* You should only be able to scroll vertically.
+* You can only see the content you've scrolled to (nothing above or below).
+* The scrollbar is part of the webview content.
+
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll.png" alt-text="Illustration showing how scrolling the webview content in the right pane works." border="false":::
+
+### Navigation
+
+For scenarios with navigation layers or heavy content, we recommend allowing users to navigate to a secondary layer. Users must be able to go back to the previous layer.
+
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav.png" alt-text="Illustration showing how navigating to a secondary layer in the right pane works." border="false":::
 
 ## Components
 
@@ -66,39 +80,58 @@ Component | Guidelines | Example
 
 ## Theming
 
-These Teams-specific guidelines can help you quickly and confidently choose the right colors and typography.
-
 ### Colors
 
 Use the [recommended color scheme](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=280%3A3102) for backgrounds, foregrounds, and conveying states in meeting notification modals.
 
-[See the full color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15339)
+[See the full color scheme](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=257%3A15339)
 
 ### Typography
 
-Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15511) for titles, body text, and metadata text.
+Use the [recommended font sizes and weights](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=258%3A16040) for titles, body text, and metadata text.
 
 ## Best practices
 
-Some text
+### Responsiveness
+
+Remember, the right pane is a tab. Layouts should be able to scale to various sizes. Consider how the tab will scale and take shape before, during, and after the meeting.
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-before-meeting.png" alt-text="Illustration showing ... ." border="false":::
+
+#### Before the meeting
+
+Make sure your tab layout can adapt to a right to left layout for different languages and that controls move to the right locations.
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-during-meeting.png" alt-text="Illustration showing ... ." border="false":::
+
+#### During the meeting
+
+Tab content moves to the right pane.
+
+   :::column-end:::
+:::row-end:::
 
 ### Theming
 
 :::row:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-do.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Do: Some text
+#### Do: Design for a dark theme
 
-Some text
+Teams meetings are optimized for dark mode to help reduce visual and cognitive noise so users can focus on the discussion and shared content.
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-dont.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Don't: Some text
+#### Don't: Use unfamiliar colors
 
-Some text
+Colors that clash with the meeting environment may be distracting and appear less native to Teams.
 
    :::column-end:::
 :::row-end:::
@@ -107,19 +140,19 @@ Some text
 
 :::row:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-do.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Do: Some text
+#### Do: Scroll vertically
 
-Some text
+Users anticipate vertical scrolling in Teams (and elsewhere).
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-dont.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Don't: Some text
+#### Don't: Scroll horizontally
 
-Some text
+Horizontal scrolling isn’t an expected behavior in Teams. Other panes in the meeting environment scroll vertically.
 
    :::column-end:::
 :::row-end:::
@@ -128,19 +161,19 @@ Some text
 
 :::row:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-do.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Do: Some text
+#### Do: Single columns
 
-Some text
+Given the right pane’s narrow nature, we strongly recommend displaying the contents in a single column.
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-dont.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Don't: Some text
+#### Don't: Multiple columns
 
-Some text
+Due to the limited space of the right pane, layouts with more than one column aren’t recommended.
 
    :::column-end:::
 :::row-end:::
@@ -149,19 +182,32 @@ Some text
 
 :::row:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-do.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Do: Some text
+#### Do: Have a back button
 
-Some text
+For scenarios with more than one layer of navigation, users must be able to go back to their previous view.
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="image" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-dont.png" alt-text="Illustration showing ... ." border="false":::
 
-#### Don't: Some text
+#### Don't: Include another close button
 
-Some text
+Providing an option to close right pane content may cause issues since there’s already a close button in the header to dismiss the right pane itself.
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="":::
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-caution.png" alt-text="Illustration showing ... ." border="false":::
+
+#### Caution: Using modals in a narrow space
+
+Modals (known as task modules in Teams) in the already narrow right pane might wrap the content and obscure the information.
 
    :::column-end:::
 :::row-end:::
