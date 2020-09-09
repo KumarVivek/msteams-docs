@@ -98,7 +98,7 @@ Remember, the right pane is a tab. Layouts should be able to scale to various si
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-before-meeting.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-before-meeting.png" alt-text="Illustration showing that the right pane content looks like a full-screen tab before a meeting." border="false":::
 
 #### Before the meeting
 
@@ -106,7 +106,7 @@ Make sure your tab layout can adapt to a right to left layout for different lang
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-during-meeting.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-during-meeting.png" alt-text="Illustration showing how the pre-meeting tab content is condensed to the right pane during a meeting." border="false":::
 
 #### During the meeting
 
@@ -119,7 +119,7 @@ Tab content moves to the right pane.
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-do.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-do.png" alt-text="Illustration showing how you should design the right pane for the dark theme used in Teams meetings." border="false":::
 
 #### Do: Design for a dark theme
 
@@ -127,7 +127,7 @@ Teams meetings are optimized for dark mode to help reduce visual and cognitive n
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-dont.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-dont.png" alt-text="Illustration showing you shouldn't use colors that aren't conducive to the Teams dark theme." border="false":::
 
 #### Don't: Use unfamiliar colors
 
@@ -140,7 +140,7 @@ Colors that clash with the meeting environment may be distracting and appear les
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-do.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-do.png" alt-text="Illustration showing you should only allow vertical scrolling in the right pane." border="false":::
 
 #### Do: Scroll vertically
 
@@ -148,7 +148,7 @@ Users anticipate vertical scrolling in Teams (and elsewhere).
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-dont.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-dont.png" alt-text="Illustration showing showing you shouldn't allow horizontal scrolling in the right pane." border="false":::
 
 #### Don't: Scroll horizontally
 
@@ -161,7 +161,7 @@ Horizontal scrolling isn’t an expected behavior in Teams. Other panes in the m
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-do.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-do.png" alt-text="Illustration showing the recommended single-column layout in the right pane." border="false":::
 
 #### Do: Single columns
 
@@ -169,7 +169,7 @@ Given the right pane’s narrow nature, we strongly recommend displaying the con
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-dont.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-dont.png" alt-text="Illustration showing how a two-column layout in the right pane isn't ideal." border="false":::
 
 #### Don't: Multiple columns
 
@@ -182,15 +182,15 @@ Due to the limited space of the right pane, layouts with more than one column ar
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-do.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-do.png" alt-text="Illustration showing you should always provide a back button if your right pane app has more than one layer of navigation." border="false":::
 
 #### Do: Have a back button
 
-For scenarios with more than one layer of navigation, users must be able to go back to their previous view.
+If you have more than one layer of navigation, users must be able to go back to their previous view.
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-dont.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-dont.png" alt-text="Illustration showing that adding another close button in the right pane for navigation is redundant and could cause issues." border="false":::
 
 #### Don't: Include another close button
 
@@ -203,7 +203,7 @@ Providing an option to close right pane content may cause issues since there’s
    :::column span="":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-caution.png" alt-text="Illustration showing ... ." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-caution.png" alt-text="Illustration showing that you need to be cautious when using modals (i.e., task modules) in the right pane given the limited space." border="false":::
 
 #### Caution: Using modals in a narrow space
 
