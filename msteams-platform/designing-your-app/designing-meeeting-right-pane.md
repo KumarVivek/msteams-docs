@@ -29,7 +29,24 @@ The following example shows the right pane displaying survey app content during 
 
 ## Anatomy
 
-Some text and art.
+The right pane essentially is a Teams tab that displays content with the following dimensions:
+
+* **Width**: 280 pixels (with 20 pixels of padding on either side)
+* **Height**: Full bleed to the bottom of the right pane. There are 20 pixels of padding between the right pane header and the webview.
+
+:::image type="content" source="../assets/images/calls-and-meetings/right-pane-anatomy.png" alt-text="Illustration showing the UI anatomy of a meeting extension right pane." border="false":::
+
+1. **App icon**: The entry point to the right pane.
+1. **Right pane header**: Includes tab name, more actions, and close.
+1. **Tab name**: The name of the tab instance.
+1. **More actions**: Provides options on hover that include:
+   * Reload the tab.
+   * Rename the tab.
+   * Mute notifications from the app during the meeting.
+   * Open app settings and About modal.
+   * Remove the tab from the meeting.
+1. **Dismiss**: Dismisses the right pane. Always use the upper-right close icon instead of an acton in the footer.
+1. **Webview**: Displays all third-party content.
 
 ## Behavior
 
@@ -37,7 +54,15 @@ Some text and art.
 
 ## Components
 
-Table of common components--will it be the same as the modals?
+Right panes are built primarily with the following UI components (which are based on the [Fluent UI Design System](https://fluentsite.z22.web.core.windows.net/)).
+
+Component | Guidelines | Example
+ - | - | -
+[Button](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10089) | Primary and secondary buttons can be medium or small | Send a response
+[Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for brief user input. Label text can include an icon  | Enter feedback
+[Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
+[Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
+[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
 
 ## Theming
 
@@ -151,7 +176,7 @@ Partner showcase and templates.
 
 ## Resources
 
-* [Full Teams design guidelines](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
+* [Meeting extensions Figma file](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
 
 ## Validate your design
 

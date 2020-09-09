@@ -46,11 +46,11 @@ Meeting notification modals are responsive and have the following dimensions:
    * Manage notification settings.
    * Use an action-based messaging extension.
    * Expand the notification on the meeting stage.
-1. **Dismiss**: Dismisses a single notification. Always use the upper-right close icon.
+1. **Dismiss**: Dismisses a single notification. Always use the upper-right close icon instead of an acton in the footer.
 1. **Actions**: Optional (depends on your use case).
 1. **Input error**: When required, displays a short error message.
 1. **Aggregate count**: When required, shows if there's more than one active modal (count includes all apps).
-1. **Webview**: Displays all third-party content. Learn about [webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829).
+1. **Webview**: Displays all third-party content. See [webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829).
 
 ## Behavior
 
@@ -197,7 +197,7 @@ Link to sample Contoso app.
 
 ## Resources
 
-* [Full Teams design guidelines](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
+* [Meeting extensions Figma file](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
 
 ## Validate your design
 
