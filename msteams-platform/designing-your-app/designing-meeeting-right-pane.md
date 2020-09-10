@@ -25,7 +25,7 @@ The following example shows the right pane displaying survey app content during 
 
 <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816" target="_blank">See the full scenario (Figma)</a>
 
-<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461" target="_blank">See other example use cases (Figma)</a>
+<a href="https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=97%3A0" target="_blank">See other example use cases (Figma)</a>
 
 ## Anatomy
 
