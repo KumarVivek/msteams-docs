@@ -23,9 +23,9 @@ The following example shows the right pane displaying survey app content during 
 
 :::image type="content" source="../assets/images/calls-and-meetings/right pane-organizer-view.png" alt-text="Example shows what the meeting right pane might look like from a meeting organizer's perspective.":::
 
-[See the full scenario](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816)
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816" target="_blank">See the full scenario (Figma)</a>
 
-[See other example use cases](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461)
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461" target="_blank">See other example use cases (Figma)</a>
 
 ## Anatomy
 
