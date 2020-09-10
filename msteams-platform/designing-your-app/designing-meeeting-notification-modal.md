@@ -46,7 +46,7 @@ Meeting notification modals are responsive and have the following dimensions:
    * Manage notification settings.
    * Use an action-based messaging extension.
    * Expand the notification on the meeting stage.
-1. **Dismiss**: Dismisses a single notification. Always use the upper-right close icon instead of an acton in the footer.
+1. **Dismiss**: Dismisses a single notification. Always use the upper-right close icon instead of an action in the footer.
 1. **Actions**: Optional (depends on your use case).
 1. **Input error**: When required, displays a short error message.
 1. **Aggregate count**: When required, shows if there's more than one active modal (count includes all apps).

@@ -45,7 +45,7 @@ The right pane is a Teams tab that displays content with the following dimension
    * Mute notifications from the app during the meeting.
    * Open app settings and About modal.
    * Remove the tab from the meeting.
-1. **Dismiss**: Dismisses the right pane. Always use the upper-right close icon instead of an acton in the footer.
+1. **Dismiss**: Dismisses the right pane. Always use the upper-right close icon instead of an action in the footer.
 1. **Webview**: Displays all third-party app content.
 
 ## Behavior
