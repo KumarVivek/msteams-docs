@@ -2,7 +2,7 @@
 title: Designing a Microsoft Teams meeting notification modal
 author: heath-hamilton
 description: Guidance and best practices for designing a meeting notification modal for Microsoft Teams.
-ms.author: heath-hamilton
+ms.author: lajanuar
 ms.topic: conceptual
 ---
 # Designing a meeting notification modal
@@ -184,10 +184,6 @@ You may be trying to avoid horizontal scrolling, but multiple modal sizes within
 
    :::column-end:::
 :::row-end:::
-
-## Mobile
-
-Some text (may remove)
 
 ## Sample app
 

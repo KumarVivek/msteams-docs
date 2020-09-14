@@ -2,7 +2,7 @@
 title: Designing the Microsoft Teams meeting right pane
 author: heath-hamilton
 description: Guidance and best practices for designing the meeting right pane for Microsoft Teams.
-ms.author: heath-hamilton
+ms.author: lajanuar
 ms.topic: conceptual
 ---
 # Designing the meeting right pane
@@ -211,10 +211,6 @@ Modals (known as task modules in Teams) in the already narrow right pane might w
 
    :::column-end:::
 :::row-end:::
-
-## Mobile
-
-Some text (may remove)
 
 ## Sample app
 
