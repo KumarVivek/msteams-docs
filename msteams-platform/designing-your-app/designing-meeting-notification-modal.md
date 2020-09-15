@@ -7,16 +7,16 @@ ms.topic: conceptual
 ---
 # Designing a meeting notification modal
 
-Meeting notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly and efficiently capture input that doesn't interrupt the meeting.
+Meeting notification modals display on the Teams meeting stage. While they require a user's attention, confirmation, or interaction, they're subtle and don't interrupt the meeting.
 
 ## Use cases
 
 You might create a meeting notification modal so users can:
 
 * Provide brief feedback
-* Take a short survey
+* Take a short survey or poll
 * Submit approvals
-* Get reminders (for example, "You're presenting next.")
+* Get reminders
 
 ## Example
 
@@ -64,7 +64,7 @@ Here's what to know if your meeting notification modal requires scrolling:
 
 ## Components
 
-Meeting notification modals are built primarily with the following UI components (which are based on the [Fluent UI Design System](https://fluentsite.z22.web.core.windows.net/)).
+Meeting notification modals are built primarily with the following UI components (which are based on the [Fluent Design System](https://fluentsite.z22.web.core.windows.net/)).
 
 Component | Guidelines | Example
  - | - | -

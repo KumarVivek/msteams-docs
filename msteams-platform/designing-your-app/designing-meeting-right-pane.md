@@ -68,7 +68,7 @@ For scenarios with navigation layers or heavy content, we recommend allowing use
 
 ## Components
 
-Right panes are built primarily with the following UI components (which are based on the [Fluent UI Design System](https://fluentsite.z22.web.core.windows.net/)).
+Right panes are built primarily with the following UI components (which are based on the [Fluent Design System](https://fluentsite.z22.web.core.windows.net/)).
 
 Component | Guidelines | Example
  - | - | -
