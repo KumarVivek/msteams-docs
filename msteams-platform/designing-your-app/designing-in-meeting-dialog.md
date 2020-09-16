@@ -7,7 +7,7 @@ ms.topic: conceptual
 ---
 # Designing an in-meeting dialog
 
-In-meeting dialogs display on the Teams meeting stage. They require a user's attention, confirmation, or interaction in a way that's subtle and doesn't interrupt the meeting.
+In-meeting dialogs display on the Teams meeting stage. They require a user's attention, confirmation, or interaction but are subtle and don't interrupt the meeting.
 
 ## Use cases
 
@@ -22,45 +22,57 @@ You might create an in-meeting dialog so users can:
 
 The following example shows what the in-meeting dialog might look like from a meeting participant's perspective. As you can see, the content and task are lightweight.
 
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-participant-view.png" alt-text="Example shows what the in-meeting dialog might look like from a meeting participant's perspective.":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-participant-view.png" alt-text="Example shows what the in-meeting dialog might look like from a meeting participant's perspective.":::
 
 <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816" target="_blank">See the full scenario (Figma)</a>
 
-<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461" target="_blank">See other example use cases (Figma)</a>
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A14353" target="_blank">See other example use cases (Figma)</a>
 
 ## Anatomy
 
-In-meeting dialogs are responsive and have the following dimensions:
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-anatomy.png" alt-text="Illustration showing the UI anatomy of an in-meeting dialog." border="false":::
 
-* **Width**: Minimum 280 pixels and maximum 460 pixels
-* **Height**: Auto height with a maximum 400 pixels (300 for the content area)
+In-meeting dialogs are comprised of the following parts:
 
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Illustration showing the UI anatomy of an in-meeting dialog." border="false":::
+1. **App icon**
+1. **App name**
+1. **Action string**
+1. **Dismiss icon:** Closes a single notification. Always use the upper-right close icon instead of an action in the footer.
+1. **Webview**: Displays all third-party app content.
 
-1. **Avatar**: User who initiated the dialog.
-1. **App attribution**: App icon and name.
-1. **Action string**: Describes what the user who initiated the dialog wants to do: [*User*][*action*].
-1. **More actions**: Provides options on hover that include:
-   * Mute notifications from the app during the meeting.
-   * Dismiss all notifications on the screen.
-   * Manage notification settings.
-   * Use an action-based messaging extension.
-   * Expand the notification on the meeting stage.
-1. **Dismiss**: Dismisses a single notification. Always use the upper-right close icon instead of an action in the footer.
-1. **Actions**: Optional (depends on your use case).
-1. **Input error**: When required, displays a short error message.
-1. **Aggregate count**: When required, shows if there's more than one active dialog (count includes all apps).
-1. **Webview**: Displays all third-party app content. See [webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829).
+### Sizing
+
+In-meeting dialogs can vary in size to account for different scenarios. Make sure to maintain padding and component sizes.
+
+* **Height**: The height of the dialog is determined by the content in the webview. Vertical scroll takes over for content that exceeds the maximum height (defined by you).
+* **Width**: The width of the webview is an absolute value within the range you specify.
+
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-sizing.png" alt-text="Illustration showing the UI anatomy of an in-meeting dialog." border="false":::
 
 ## Behavior
 
-Here's what to know if your in-meeting dialog requires scrolling:
+See general in-meeting dialog behavior, such as rest, loading, and more, in [Figma](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A17985).
+
+### Position
+
+In-meeting dialogs are aligned in the center of the meeting stage. They can’t be dragged and work within the framework of Teams system-level notifications.
+
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-position.png" alt-text="Illustration showing the UI anatomy of an in-meeting dialog." border="false":::
+
+### Aggregation
+
+Only one dialog displays at a time, stack ranking from last to most recent sent at the back. Once a dialog is resolved or dismissed, the next one take its place.
+
+[See an example (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A17985)
+
+### Scrolling
+
+Scrolling occurs in the webview portion of an in-meeting dialog. Remember the following about scrolling:
 
 * You should only be able to scroll vertically.
 * You can only see the content you've scrolled to (nothing above or below).
-* The scrollbar is part of the webview content.
 
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll.png" alt-text="Illustration showing how scrolling the webview content in the in-meeting dialog works." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-scroll.png" alt-text="Illustration showing how scrolling the webview content in the in-meeting dialog works." border="false":::
 
 ## Components
 
@@ -72,7 +84,7 @@ Component | Guidelines | Example
 [Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for brief user input. Label text can include an icon  | Enter feedback
 [Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
 [Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
-[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
+[Alerts](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
 
 ## Theming
 
@@ -94,7 +106,7 @@ While in-meeting dialogs can make calls more effective, they also can derail cal
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-do.png" alt-text="Illustration showing how to limit in-meeting dialog content to a single screen so users can focus on the meeting." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-steps-do.png" alt-text="Illustration showing how to limit in-meeting dialog content to a single screen so users can focus on the meeting." border="false":::
 
 #### Do: Keep it contained
 
@@ -102,7 +114,7 @@ Limit in-meeting dialog content to a single screen so users can focus on the mee
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-dont.png" alt-text="Illustration showing how in-meeting dialogs shouldn't require users to navigate through content." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-steps-dont.png" alt-text="Illustration showing how in-meeting dialogs shouldn't require users to navigate through content." border="false":::
 
 #### Don't: Include multiple steps
 
@@ -115,18 +127,18 @@ in-meeting dialogs shouldn't require users to navigate through content.
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-do.png" alt-text="Illustration showing why you should remove unnecessary content that doesn't help users accomplish something quickly." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-interactions-do.png" alt-text="Illustration showing why you should remove unnecessary content that doesn't help users accomplish something quickly." border="false":::
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-dont.png" alt-text="Another illustration showing why you should remove unnecessary content that doesn't help users accomplish something quickly." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-interactions-dont.png" alt-text="Another illustration showing why you should remove unnecessary content that doesn't help users accomplish something quickly." border="false":::
 
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-do.png" alt-text="Illustration showing that, if you need complex interactions, it's recommended you use a single column on the meeting right pane instead." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-tab-do.png" alt-text="Illustration showing that, if you need complex interactions, it's recommended you use a single column on the meeting right pane instead." border="false":::
 
 #### Do: Limit the number of possible interactions
 
@@ -134,7 +146,7 @@ Remove unnecessary content that doesn't help users accomplish something quickly.
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-dont.png" alt-text="Illustration showing that too many interactions in the in-meeting dialog distracts from the meeting." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-tab-dont.png" alt-text="Illustration showing that too many interactions in the in-meeting dialog distracts from the meeting." border="false":::
 
 #### Don't: Introduce unnecessary elements
 
@@ -147,7 +159,7 @@ You may be able to design a single in-meeting dialog with multiple interactions,
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-do.png" alt-text="Illustration showing an ideal layout for in-meeting dialogs." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-layout-do.png" alt-text="Illustration showing an ideal layout for in-meeting dialogs." border="false":::
 
 #### Do: Use single-column layouts
 
@@ -155,7 +167,7 @@ Since the dialogs are at the center of the meeting stage, task completion should
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-dont.png" alt-text="Illustration showing layout for in-meeting dialogs that isn't recommended." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-layout-dont.png" alt-text="Illustration showing layout for in-meeting dialogs that isn't recommended." border="false":::
 
 #### Don't: Clutter the space
 
@@ -168,7 +180,7 @@ Dense content can be distracting and overwhelming, especially during a meeting.
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-do.png" alt-text="Illustration showing how the in-meeting dialog size should always be the same." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-size-do.png" alt-text="Illustration showing how the in-meeting dialog size should always be the same." border="false":::
 
 #### Do: Keep it consistent
 
@@ -176,7 +188,7 @@ This is important because in-meeting dialogs always display in the same location
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-dont.png" alt-text="Illustration showing how you shouldn't use different dialog sizes." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-size-dont.png" alt-text="Illustration showing how you shouldn't use different dialog sizes." border="false":::
 
 #### Don't: Always fit to the content
 
@@ -185,9 +197,30 @@ You may be trying to avoid horizontal scrolling, but multiple in-meeting dialog 
    :::column-end:::
 :::row-end:::
 
-## Sample app
+### Controls
 
-Link to sample Contoso app.
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-controls-do.png" alt-text="Illustration showing where to place buttons on the in-meeting dialog." border="false":::
+
+#### Do: Right align the primary action
+
+We recommend positioning the most visually heavy action to the right-most location.
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-controls-dont.png" alt-text="Illustration showing where not to place buttons on the in-meeting dialog." border="false":::
+
+#### Don't: Left or center align actions
+
+Doing so deviates from the standard Teams pattern for control placement in a dialog.
+
+   :::column-end:::
+:::row-end:::
+
+## Accessibility
+
+For information on accessibility, see [Figma](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A15397).
 
 ## Resources
 

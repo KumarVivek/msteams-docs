@@ -21,7 +21,7 @@ People might use the in-meeting tab during meetings to:
 
 The following example shows the in-meeting tab displaying survey app content during a meeting.
 
-:::image type="content" source="../assets/images/calls-and-meetings/right pane-organizer-view.png" alt-text="Example shows what the meeting in-meeting tab might look like from a meeting organizer's perspective.":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-organizer-view.png" alt-text="Example shows what the meeting in-meeting tab might look like from a meeting organizer's perspective.":::
 
 <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816" target="_blank">See the full scenario (Figma)</a>
 
@@ -34,7 +34,7 @@ The in-meeting tab is a Teams tab that displays content with the following dimen
 * **Width**: 280 pixels (with 20 pixels of padding on either side)
 * **Height**: Full bleed to the bottom of the in-meeting tab. There are 20 pixels of padding between the pane header and the webview.
 
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-anatomy.png" alt-text="Illustration showing the UI anatomy of a meeting extension in-meeting tab." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-anatomy.png" alt-text="Illustration showing the UI anatomy of a meeting extension in-meeting tab." border="false":::
 
 1. **App icon**: The entry point to the in-meeting tab.
 1. **in-meeting tab header**: Includes tab name, more actions, and dismiss button.
@@ -43,7 +43,7 @@ The in-meeting tab is a Teams tab that displays content with the following dimen
    * Reload the tab.
    * Rename the tab.
    * Mute notifications from the app during the meeting.
-   * Open app settings and About modal.
+   * Open app settings and About dialog.
    * Remove the tab from the meeting.
 1. **Dismiss**: Dismisses the in-meeting tab. Always use the upper-right close icon instead of an action in the footer.
 1. **Webview**: Displays all third-party app content.
@@ -58,13 +58,13 @@ Here's what to know about scrolling in the in-meeting tab:
 * You can only see the content you've scrolled to (nothing above or below).
 * The scrollbar is part of the webview content.
 
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll.png" alt-text="Illustration showing how scrolling the webview content in the in-meeting tab works." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-scroll.png" alt-text="Illustration showing how scrolling the webview content in the in-meeting tab works." border="false":::
 
 ### Navigation
 
 For scenarios with navigation layers or heavy content, we recommend allowing users to navigate to a secondary layer. Users must be able to go back to the previous layer.
 
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav.png" alt-text="Illustration showing how navigating to a secondary layer in the in-meeting tab works." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-nav.png" alt-text="Illustration showing how navigating to a secondary layer in the in-meeting tab works." border="false":::
 
 ## Components
 
@@ -76,7 +76,7 @@ Component | Guidelines | Example
 [Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for brief user input. Label text can include an icon  | Enter feedback
 [Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
 [Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
-[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
+[Alerts](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
 
 ## Theming
 
@@ -98,15 +98,15 @@ In-meeting tab layouts should be able to scale to various sizes. Consider how th
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-before-meeting.png" alt-text="Illustration showing that the in-meeting tab content looks like a full-screen tab before a meeting." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-before-meeting.png" alt-text="Illustration showing that the in-meeting tab content looks like a full-screen tab before and after a meeting." border="false":::
 
 #### Before the meeting
 
-Make sure your tab layout can adapt to a right to left layout for different languages and that controls move to the right locations.
+Make sure your tab layout can adapt to a right to left layout for different languages and that controls move to the right locations. (This layout could also apply to after the meeting.)
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-during-meeting.png" alt-text="Illustration showing how the pre-meeting tab content is condensed to the in-meeting tab during a meeting." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-during-meeting.png" alt-text="Illustration showing how the pre-meeting tab content is condensed to the in-meeting tab during a meeting." border="false":::
 
 #### During the meeting
 
@@ -119,7 +119,7 @@ Tab content moves to the in-meeting tab.
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-do.png" alt-text="Illustration showing how you should design the in-meeting tab for the dark theme used in Teams meetings." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-theming-do.png" alt-text="Illustration showing how you should design the in-meeting tab for the dark theme used in Teams meetings." border="false":::
 
 #### Do: Design for a dark theme
 
@@ -127,7 +127,7 @@ Teams meetings are optimized for dark mode to help reduce visual and cognitive n
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-theming-dont.png" alt-text="Illustration showing you shouldn't use colors that aren't conducive to the Teams dark theme." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-theming-dont.png" alt-text="Illustration showing you shouldn't use colors that aren't conducive to the Teams dark theme." border="false":::
 
 #### Don't: Use unfamiliar colors
 
@@ -140,7 +140,7 @@ Colors that clash with the meeting environment may be distracting and appear les
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-do.png" alt-text="Illustration showing you should only allow vertical scrolling in the in-meeting tab." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-scroll-do.png" alt-text="Illustration showing you should only allow vertical scrolling in the in-meeting tab." border="false":::
 
 #### Do: Scroll vertically
 
@@ -148,11 +148,11 @@ Users anticipate vertical scrolling in Teams (and elsewhere).
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-scroll-dont.png" alt-text="Illustration showing showing you shouldn't allow horizontal scrolling in the in-meeting tab." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-scroll-dont.png" alt-text="Illustration showing showing you shouldn't allow horizontal scrolling in the in-meeting tab." border="false":::
 
 #### Don't: Scroll horizontally
 
-Horizontal scrolling isn’t an expected behavior in Teams. Other panes in the meeting environment scroll vertically.
+Horizontal scrolling isn’t an expected behavior in Teams. Other canvases in the meeting environment scroll vertically.
 
    :::column-end:::
 :::row-end:::
@@ -161,7 +161,7 @@ Horizontal scrolling isn’t an expected behavior in Teams. Other panes in the m
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-do.png" alt-text="Illustration showing the recommended single-column layout in the in-meeting tab." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-layout-do.png" alt-text="Illustration showing the recommended single-column layout in the in-meeting tab." border="false":::
 
 #### Do: Single columns
 
@@ -169,7 +169,7 @@ Given the in-meeting tab’s narrow nature, we strongly recommend displaying the
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-layout-dont.png" alt-text="Illustration showing how a two-column layout in the in-meeting tab isn't ideal." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-layout-dont.png" alt-text="Illustration showing how a two-column layout in the in-meeting tab isn't ideal." border="false":::
 
 #### Don't: Multiple columns
 
@@ -182,7 +182,7 @@ Due to the limited space of the in-meeting tab, layouts with more than one colum
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-do.png" alt-text="Illustration showing you should always provide a back button if your in-meeting tab app has more than one layer of navigation." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-nav-do.png" alt-text="Illustration showing you should always provide a back button if your in-meeting tab app has more than one layer of navigation." border="false":::
 
 #### Do: Have a back button
 
@@ -190,7 +190,7 @@ If you have more than one layer of navigation, users must be able to go back to 
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-dont.png" alt-text="Illustration showing that adding another close button in the in-meeting tab for navigation is redundant and could cause issues." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-nav-dont.png" alt-text="Illustration showing that adding another close button in the in-meeting tab for navigation is redundant and could cause issues." border="false":::
 
 #### Don't: Include another close button
 
@@ -203,18 +203,18 @@ Providing an option to close in-meeting tab content may cause issues since there
    :::column span="":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/right-pane-nav-caution.png" alt-text="Illustration showing that you need to be cautious when using modals (i.e., task modules) in the in-meeting tab given the limited space." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-nav-caution.png" alt-text="Illustration showing that you need to be cautious when using modals (i.e., task modules) in the in-meeting tab given the limited space." border="false":::
 
-#### Caution: Using modals in a narrow space
+#### Caution: Using dialogs in a narrow space
 
-Modals (known as task modules in Teams) in the already narrow in-meeting tab might wrap the content and obscure the information.
+Dialogs, such as task modules, in the already narrow in-meeting tab might wrap the content and obscure the information.
 
    :::column-end:::
 :::row-end:::
 
-## Sample app
+## Accessibility
 
-Partner showcase and templates.
+For information on accessibility, see [Figma](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=1263%3A16).
 
 ## Resources
 
