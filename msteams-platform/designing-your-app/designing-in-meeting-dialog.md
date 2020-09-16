@@ -80,25 +80,25 @@ Unlike similar components, in-meeting dialogs are dismissed once a user selects 
 
 ## Components
 
-in-meeting dialogs are built primarily with the following UI components (which are based on the <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent Design System</a>).
+In-meeting dialogs are built primarily with the following UI components (which are based on the <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent Design System</a>).
 
 Component | Guidelines | Example
  - | - | -
 <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10089" target="_blank">Button</a> | Primary and secondary buttons can be medium or small | Send a response
-[Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for brief user input. Label text can include an icon  | Enter feedback
-[Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
-[Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
-[Alerts](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102" target="_blank">Input</a> | Field for brief user input. Label text can include an icon  | Enter feedback
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115" target="_blank">Dropdown</a> | Select one or more options from a list. Can include search and multi-selection features | Choose a language
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128" target="_blank">Selection controls</a> | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141" target="_blank">Alerts</a> | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
 
 ## Theming
 
 ### Colors
 
-Use the [recommended color scheme (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for backgrounds, foregrounds, and conveying states.
+Use the <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283" target="_blank">recommended color scheme (Figma)</a> for backgrounds, foregrounds, and conveying states.
 
 ### Typography
 
-Use the [recommended font sizes and weights (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for titles, body text, and metadata text.
+Use the <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283" target="_blank">recommended font sizes and weights (Figma)</a> for titles, body text, and metadata text.
 
 ## Best practices
 
@@ -222,15 +222,15 @@ This deviates from the standard Teams pattern for control placement in a dialog 
 
 ## Accessibility
 
-For information on accessibility, see [Figma](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A15397).
+For information on accessibility, see <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A15397" target="_blank">Figma</a>.
 
 ## Resources
 
-* <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598" target="_blank">Meeting extensions Figma file</a>
+* <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598" target="_blank">Teams meeting extensions Figma file</a>
 
 ## Validate your design
 
 If you plan to publish your app to AppSource, you should understand what design issues commonly cause apps to fail during submission.
 
 > [!div class="nextstepaction"]
-> [Check design validation guidelines](https://review.docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases?branch=restructure-design-topics-ia#validation-guidelines)
+> [Check design validation guidelines](../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#validation-guidelines)
