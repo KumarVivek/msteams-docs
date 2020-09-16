@@ -11,7 +11,7 @@ In-meeting dialogs display on the Teams meeting stage. They require a user's att
 
 ## Use cases
 
-You might create an in-meeting dialog so users can:
+In-meeting dialogs are triggered by a user. You might create one of these dialogs so users can:
 
 * Provide brief feedback
 * Take a short survey or poll
@@ -38,7 +38,7 @@ In-meeting dialogs are comprised of the following parts:
 1. **App name**
 1. **Action string**
 1. **Dismiss icon:** Closes a single notification. Always use the upper-right close icon instead of an action in the footer.
-1. **Webview**: Displays all third-party app content.
+1. **Webview**: Displays all third-party app content and buttons (standard Teams buttons recommended).
 
 ### Sizing
 
@@ -73,6 +73,12 @@ Scrolling occurs in the webview portion of an in-meeting dialog. Remember the fo
 * You can only see the content you've scrolled to (nothing above or below).
 
 :::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-scroll.png" alt-text="Illustration showing how scrolling the webview content in the in-meeting dialog works." border="false":::
+
+### Buttons
+
+In-meeting dialog buttons are part of the webview ([see some examples](#best-practices)). 
+
+Unlike similar components, in-meeting dialogs are dismissed once I user selects a button.
 
 ## Components
 
@@ -213,7 +219,7 @@ We recommend positioning the most visually heavy action to the right-most locati
 
 #### Don't: Left or center align actions
 
-Doing so deviates from the standard Teams pattern for control placement in a dialog.
+Doing so deviates from the standard Teams pattern for control placement in a dialog and may conflict with a dialog behind the top one.
 
    :::column-end:::
 :::row-end:::

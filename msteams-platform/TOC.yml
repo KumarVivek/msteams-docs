@@ -10,24 +10,12 @@
   items:
   - name: Get started
     href: designing-your-app/designing-overview.md
-  - name: Tabs
-    href: designing-your-app/designing-tabs.md
-  - name: Messaging extensions
-    href: designing-your-app/designing-messaging-extensions.md
   - name: Meeting extensions
     items:
     - name: In-meeting dialog
       href: designing-your-app/designing-in-meeting-dialog.md
     - name: In-meeting tab
       href: designing-your-app/designing-in-meeting-tab.md
-  - name: Bots
-    href: designing-your-app/designing-bots.md
-  - name: Webhooks and connectors
-    href: designing-your-app/designing-connectors.md
-  - name: Other considerations
-    href: designing-your-app/designing-other-considerations.md
-  - name: Resources
-    href: designing-your-app/designing-resources.md
 - name: Tutorials and code samples
   items:
   - name: Create an app using C#

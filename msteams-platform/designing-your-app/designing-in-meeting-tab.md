@@ -1,5 +1,5 @@
 ---
-title: Designing the Microsoft Teams meeting in-meeting tab
+title: Designing a Microsoft Teams in-meeting tab
 author: heath-hamilton
 description: Guidance and best practices for designing the in-meeting tab for Microsoft Teams.
 ms.author: lajanuar
@@ -31,24 +31,22 @@ The following example shows the in-meeting tab displaying survey app content dur
 
 The in-meeting tab is a Teams tab that displays content with the following dimensions:
 
-* **Width**: 280 pixels (with 20 pixels of padding on either side)
-* **Height**: Full bleed to the bottom of the in-meeting tab. There are 20 pixels of padding between the pane header and the webview.
+* **Width**: 280 pixels for the webview area. There are 20 pixels of padding on the left and right sides of the webview.
+* **Height**: Full bleed to the bottom of the in-meeting tab. There are 20 pixels of padding between the tab header and webview area.
 
 :::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-anatomy.png" alt-text="Illustration showing the UI anatomy of a meeting extension in-meeting tab." border="false":::
 
 1. **App icon**: The entry point to the in-meeting tab.
-1. **in-meeting tab header**: Includes tab name, more actions, and dismiss button.
+1. **in-meeting tab header**: Includes the tab name.
 1. **Tab name**: The name of the tab instance.
-1. **More actions**: Provides options on hover that include:
-   * Reload the tab.
-   * Rename the tab.
-   * Mute notifications from the app during the meeting.
-   * Open app settings and About dialog.
-   * Remove the tab from the meeting.
 1. **Dismiss**: Dismisses the in-meeting tab. Always use the upper-right close icon instead of an action in the footer.
 1. **Webview**: Displays all third-party app content.
 
 ## Behavior
+
+### Scale
+
+Currently, the width of the in-meeting tab is fixed.
 
 ### Scrolling
 
@@ -219,6 +217,8 @@ For information on accessibility, see [Figma](https://www.figma.com/file/QjjWsZY
 ## Resources
 
 * [Meeting extensions Figma file](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
+* [Tabs design guidelines](../tabs/design/tabs.md)
+* [Tabs design guidelines for mobile](../tabs/design/tabs-mobile.md)
 
 ## Validate your design
 
