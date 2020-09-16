@@ -49,7 +49,7 @@ In-meeting dialogs can vary in size to account for different use cases. Always m
 
 ## Behavior
 
-See general in-meeting dialog behavior, such as rest, loading, and more, in [Figma](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A17985).
+See general in-meeting dialog behavior, such as rest, loading, and more, in <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A17985" target="_blank">Figma</a>.
 
 ### Position
 
@@ -61,7 +61,7 @@ In-meeting dialogs are aligned in the center of the meeting stage. They can’t 
 
 Only one dialog displays at a time, stack ranking from last to most recent sent at the bottom. Once a dialog is resolved or dismissed, the next one take its place.
 
-[See an example (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A17985)
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A17985" target="_blank">See an example (Figma)</a>
 
 ### Scrolling
 
@@ -74,17 +74,17 @@ Scrolling occurs in the webview portion of an in-meeting dialog. Remember the fo
 
 ### Buttons
 
-In-meeting dialog buttons are part of the webview ([see some examples](#best-practices)). 
+In-meeting dialog buttons are part of the webview ([see some examples](#best-practices)).
 
 Unlike similar components, in-meeting dialogs are dismissed once a user selects a button.
 
 ## Components
 
-in-meeting dialogs are built primarily with the following UI components (which are based on the [Fluent Design System](https://fluentsite.z22.web.core.windows.net/)).
+in-meeting dialogs are built primarily with the following UI components (which are based on the <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent Design System</a>).
 
 Component | Guidelines | Example
  - | - | -
-[Button](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10089) | Primary and secondary buttons can be medium or small | Send a response
+<a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10089" target="_blank">Button</a> | Primary and secondary buttons can be medium or small | Send a response
 [Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for brief user input. Label text can include an icon  | Enter feedback
 [Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
 [Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
@@ -102,7 +102,7 @@ Use the [recommended font sizes and weights (Figma)](https://www.figma.com/file/
 
 ## Best practices
 
-While in-meeting dialogs can make calls more effective, they also can derail calls if too obtrusive. Allowing the organizer to share this content and participants to quickly view and interact with it is paramount to a good experience. In general, use in-meeting dialogs sparingly and make sure they follow these guidelines.
+While in-meeting dialogs can make calls more effective, they also can derail calls if too obtrusive. In general, use the dialogs sparingly and follow these best practices.
 
 ### Navigation
 
