@@ -25,8 +25,6 @@ The following example shows the in-meeting tab displaying survey app content dur
 
 <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816" target="_blank">See the full scenario (Figma)</a>
 
-<a href="https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=97%3A0" target="_blank">See other example use cases (Figma)</a>
-
 ## Anatomy
 
 The in-meeting tab displays your app content using the following dimensions:

@@ -142,7 +142,7 @@ In-meeting dialogs shouldn't require users to navigate through content.
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-tab-do.png" alt-text="Illustration showing that, if you need complex interactions, it's recommended you use a single column on the meeting right pane instead." border="false":::
 
-#### Do: Limit the number of possible interactions
+#### Do: Limit number of interactions
 
 Remove unnecessary content that doesn't help users accomplish something quickly. If you need complex interactions, we strongly recommend displaying your content using a single column in the in-meeting tab instead.
 
