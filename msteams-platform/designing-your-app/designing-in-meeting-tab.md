@@ -11,7 +11,7 @@ The in-meeting tab is a canvas for augmenting collaboration during meetings. Bas
 
 ## Use cases
 
-People might use the in-meeting tab during meetings to:
+People might use the in-meeting tab to:
 
 * Submit detailed feedback (for example, evaluate a job candidate)
 * Quickly create a poll, survey, or task item for the meeting participants
@@ -29,17 +29,17 @@ The following example shows the in-meeting tab displaying survey app content dur
 
 ## Anatomy
 
-The in-meeting tab is a Teams tab that displays content with the following dimensions:
+The in-meeting tab displays your app content using the following dimensions:
 
 * **Width**: 280 pixels for the webview area. There are 20 pixels of padding on the left and right sides of the webview.
-* **Height**: Full bleed to the bottom of the in-meeting tab. There are 20 pixels of padding between the tab header and webview area.
+* **Height**: Full bleed to the bottom of the tab. There are 20 pixels of padding between the webview area and tab header.
 
 :::image type="content" source="../assets/images/calls-and-meetings/in-meeting-tab-anatomy.png" alt-text="Illustration showing the UI anatomy of a meeting extension in-meeting tab." border="false":::
 
 1. **App icon**: The entry point to the in-meeting tab.
-1. **in-meeting tab header**: Includes the tab name.
-1. **Tab name**: The name of the tab instance.
-1. **Dismiss**: Dismisses the in-meeting tab. Always use the upper-right close icon instead of an action in the footer.
+1. **Header**: Includes the tab name.
+1. **Name**: The name of the tab instance.
+1. **Dismiss**: Dismisses the tab. Always use the upper-right close icon instead of an action in the footer.
 1. **Webview**: Displays all third-party app content.
 
 ## Behavior
@@ -80,13 +80,11 @@ Component | Guidelines | Example
 
 ### Colors
 
-Use the [recommended color scheme](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=280%3A3102) for backgrounds, foregrounds, and conveying states in meeting notification modals.
-
-[See the full color scheme](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=257%3A15339)
+Use the [recommended color scheme (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for backgrounds, foregrounds, and conveying states.
 
 ### Typography
 
-Use the [recommended font sizes and weights](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=258%3A16040) for titles, body text, and metadata text.
+Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for titles, body text, and metadata text.
 
 ## Best practices
 
@@ -100,7 +98,7 @@ In-meeting tab layouts should be able to scale to various sizes. Consider how th
 
 #### Before the meeting
 
-Make sure your tab layout can adapt to a right to left layout for different languages and that controls move to the right locations. (This layout could also apply to after the meeting.)
+Make sure your tab layout can adapt to a right or left layout for different languages and that controls move to the right locations. (This layout could also apply to after the meeting.)
 
    :::column-end:::
    :::column span="":::
@@ -108,7 +106,7 @@ Make sure your tab layout can adapt to a right to left layout for different lang
 
 #### During the meeting
 
-Tab content moves to the in-meeting tab.
+Tab content adjusts to the in-meeting tab layout and location.
 
    :::column-end:::
 :::row-end:::
@@ -205,7 +203,7 @@ Providing an option to close in-meeting tab content may cause issues since there
 
 #### Caution: Using dialogs in a narrow space
 
-Dialogs, such as task modules, in the already narrow in-meeting tab might wrap the content and obscure the information.
+Dialogs, such as task modules, in the already narrow in-meeting tab might wrap and obscure the content.
 
    :::column-end:::
 :::row-end:::
@@ -216,7 +214,7 @@ For information on accessibility, see [Figma](https://www.figma.com/file/QjjWsZY
 
 ## Resources
 
-* [Meeting extensions Figma file](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
+* <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598" target="_blank">Meeting extensions Figma file</a>
 * [Tabs design guidelines](../tabs/design/tabs.md)
 * [Tabs design guidelines for mobile](../tabs/design/tabs-mobile.md)
 

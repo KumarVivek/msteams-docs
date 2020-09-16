@@ -32,8 +32,6 @@ The following example shows what the in-meeting dialog might look like from a me
 
 :::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-anatomy.png" alt-text="Illustration showing the UI anatomy of an in-meeting dialog." border="false":::
 
-In-meeting dialogs are comprised of the following parts:
-
 1. **App icon**
 1. **App name**
 1. **Action string**
@@ -42,12 +40,12 @@ In-meeting dialogs are comprised of the following parts:
 
 ### Sizing
 
-In-meeting dialogs can vary in size to account for different scenarios. Make sure to maintain padding and component sizes.
+In-meeting dialogs can vary in size to account for different use cases. Always maintain padding and component sizes.
 
 * **Height**: The height of the dialog is determined by the content in the webview. Vertical scroll takes over for content that exceeds the maximum height (defined by you).
 * **Width**: The width of the webview is an absolute value within the range you specify.
 
-:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-sizing.png" alt-text="Illustration showing the UI anatomy of an in-meeting dialog." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/in-meeting-dialog-sizing.png" alt-text="Illustration showing the possible dimensions of an in-meeting dialog. Height: The height of the dialog is determined by the content in the webview. Vertical scroll takes over for content that exceeds the maximum height (defined by you). Min: None. Max: 400 pixels (320 pixels webview). Width: The width of the webview is an absolute value within the range you specify. Min.: 288 pixels (256 pixels webview). Max: 468 pixels (436 pixels webview)." border="false":::
 
 ## Behavior
 
@@ -61,7 +59,7 @@ In-meeting dialogs are aligned in the center of the meeting stage. They can’t 
 
 ### Aggregation
 
-Only one dialog displays at a time, stack ranking from last to most recent sent at the back. Once a dialog is resolved or dismissed, the next one take its place.
+Only one dialog displays at a time, stack ranking from last to most recent sent at the bottom. Once a dialog is resolved or dismissed, the next one take its place.
 
 [See an example (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=2292%3A17985)
 
@@ -78,7 +76,7 @@ Scrolling occurs in the webview portion of an in-meeting dialog. Remember the fo
 
 In-meeting dialog buttons are part of the webview ([see some examples](#best-practices)). 
 
-Unlike similar components, in-meeting dialogs are dismissed once I user selects a button.
+Unlike similar components, in-meeting dialogs are dismissed once a user selects a button.
 
 ## Components
 
@@ -96,17 +94,15 @@ Component | Guidelines | Example
 
 ### Colors
 
-Use the [recommended color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=280%3A4030) for backgrounds, foregrounds, and conveying states in in-meeting dialogs.
-
-[See the full color scheme](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=257%3A15339)
+Use the [recommended color scheme (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for backgrounds, foregrounds, and conveying states.
 
 ### Typography
 
-Use the [recommended font sizes and weights](https://www.figma.com/file/cqL4AfKxnjKYjcv5jbgfMv/Principles-and-guidelines?node-id=258%3A16040) for titles, body text, and metadata text.
+Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for titles, body text, and metadata text.
 
 ## Best practices
 
-While in-meeting dialogs can make calls more effective, they also can derail calls if too obtrusive. Allowing the organizer to share this content and participants to quickly view and interact with it is paramount to a good experience. In general, use these types of dialogs sparingly and make sure they follow these guidelines.
+While in-meeting dialogs can make calls more effective, they also can derail calls if too obtrusive. Allowing the organizer to share this content and participants to quickly view and interact with it is paramount to a good experience. In general, use in-meeting dialogs sparingly and make sure they follow these guidelines.
 
 ### Navigation
 
@@ -124,7 +120,7 @@ Limit in-meeting dialog content to a single screen so users can focus on the mee
 
 #### Don't: Include multiple steps
 
-in-meeting dialogs shouldn't require users to navigate through content.
+In-meeting dialogs shouldn't require users to navigate through content.
 
    :::column-end:::
 :::row-end:::
@@ -148,7 +144,7 @@ in-meeting dialogs shouldn't require users to navigate through content.
 
 #### Do: Limit the number of possible interactions
 
-Remove unnecessary content that doesn't help users accomplish something quickly. If you need complex interactions, we strongly recommend using a single column in the meeting tab instead.
+Remove unnecessary content that doesn't help users accomplish something quickly. If you need complex interactions, we strongly recommend displaying your content using a single column in the in-meeting tab instead.
 
    :::column-end:::
    :::column span="":::
@@ -177,7 +173,7 @@ Since the dialogs are at the center of the meeting stage, task completion should
 
 #### Don't: Clutter the space
 
-Dense content can be distracting and overwhelming, especially during a meeting.
+Dense or overly structured content can be distracting and overwhelming, especially during a meeting.
 
    :::column-end:::
 :::row-end:::
@@ -219,7 +215,7 @@ We recommend positioning the most visually heavy action to the right-most locati
 
 #### Don't: Left or center align actions
 
-Doing so deviates from the standard Teams pattern for control placement in a dialog and may conflict with a dialog behind the top one.
+This deviates from the standard Teams pattern for control placement in a dialog and may conflict with a dialog behind the top one.
 
    :::column-end:::
 :::row-end:::
@@ -230,7 +226,7 @@ For information on accessibility, see [Figma](https://www.figma.com/file/QjjWsZY
 
 ## Resources
 
-* [Meeting extensions Figma file](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
+* <a href="https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598" target="_blank">Meeting extensions Figma file</a>
 
 ## Validate your design
 
