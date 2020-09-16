@@ -17,9 +17,9 @@
   - name: Meeting extensions
     items:
     - name: Notification modals
-      href: designing-your-app/designing-meeeting-notification-modal.md
+      href: designing-your-app/designing-meeting-notification-modal.md
     - name: Right pane
-      href: designing-your-app/designing-meeeting-right-pane.md
+      href: designing-your-app/designing-meeting-right-pane.md
   - name: Bots
     href: designing-your-app/designing-bots.md
   - name: Webhooks and connectors
