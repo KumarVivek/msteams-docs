@@ -98,7 +98,7 @@ Use the [recommended color scheme (Figma)](https://www.figma.com/file/QjjWsZYpNq
 
 ### Typography
 
-Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for titles, body text, and metadata text.
+Use the [recommended font sizes and weights (Figma)](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15283) for titles, body text, and metadata text.
 
 ## Best practices
 
