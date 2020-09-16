@@ -35,7 +35,7 @@ The following example shows what the in-meeting dialog might look like from a me
 1. **App icon**
 1. **App name**
 1. **Action string**
-1. **Dismiss icon:** Closes a single notification. Always use the upper-right close icon instead of an action in the footer.
+1. **Dismiss icon:** Closes a single dialog. Always use the upper-right close icon instead of an action in the footer.
 1. **Webview**: Displays all third-party app content and buttons (standard Teams buttons recommended).
 
 ### Sizing
